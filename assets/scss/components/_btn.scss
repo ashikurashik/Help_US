@@ -1,0 +1,17 @@
+@use '../utils/' as *;
+
+.tp-btn{
+    padding: 22px 34px;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    background-color: var(--tp-theme-color);
+    line-height: 1;
+    border-radius: 12px;
+    &-white{
+        background-color: var(--tp-white-color);
+    }
+    &-text{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,116 @@
+@use '../../utils/' as *;
+
+
+
+.tp-header{
+    &-transparent{
+        position: absolute;
+        top: 26px;
+        left: 0;
+        right: 0;
+    }
+    &-container{
+        max-width: 1424px;
+    }
+    &-bg{
+        padding-right: 5px;
+        border-radius: 12px;
+    }
+    &-row{
+
+    }
+    &-logo{     
+        z-index: 1;
+        position: relative;   
+        &-box{
+            width: 200px;
+            text-align: center;
+            flex: 0 0 auto;
+            border-radius: 12px 0 0 12px;
+        }
+        &-shape{
+            position: relative;
+            & svg{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+            }
+        }
+    }
+    &-menu{
+        & ul{
+            & li{
+                display: inline-block;
+                margin-right: 40px;
+                position: relative;
+                & a{
+                    display: inline-block;
+                    color: var(--tp-primary-color);
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 21px 0;
+                }
+                &:hover{
+                   & > a{
+                        color: var(--tp-theme-color);
+                    }
+                    & > .sub-menu{
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100%;
+                    }
+                }  
+                & .sub-menu{
+                    position: absolute;
+                    width: 220px;
+                    background: #fff;
+                    top: 108%;
+                    left: 0;
+                    padding: 18px 0;
+                    @include tp-transition();
+                    opacity: 0;
+                    visibility: hidden;
+                    & li{
+                        display: block;
+                        margin-right: 0;
+
+                        & a{
+                            display: block;
+                            padding: 3px 28px;
+                        }
+                        & .sub-menu{
+                            left: 103%;
+                            top: 0;
+                        }
+                        &:hover{
+                            & > .sub-menu{
+                                left: 100%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    &-content{
+        width: 100%;
+    }
+    &-right{
+    }
+    &-phone{
+        & a{
+            color: #063D30;
+            font-size: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            & svg{
+                margin-right: 6px;
+            }
+        }
+    }
+    &-btn{
+    }
+}

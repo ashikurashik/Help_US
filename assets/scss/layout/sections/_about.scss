@@ -1,1 +1,72 @@
 @use '../../utils/' as *;
+
+
+.tp-about{
+    &-shape{
+        &-1{
+            left: 97px;
+            top: 23%;
+            mix-blend-mode: exclusion;
+        }
+        &-2{
+            right: -232px;
+            top: -5%;
+            
+        } 
+    }
+    &-vr-title{
+        font-size: 130px;
+        font-weight: 600;
+        color: #E0DEDA;
+        margin: 0;
+        line-height: 1;
+        right: -192px;
+        transform: rotate(90deg);
+        top: 120px;
+    }
+    &-number{
+        bottom: 80px;
+        right: -120px;
+        &-info{
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: right;
+            left: 0;
+            right: 0;
+            padding-right: 62px;
+            & h2{
+                color: #F8F3E7;
+                font-size: 90px;
+            }
+            & h6{
+                font-size: 15px;
+                color: #F8F3E7;
+                letter-spacing: 0;
+                margin: 0;
+            }
+        }
+    }
+    &-fact{
+        &-img{
+            margin-right: 12px;
+        }
+        &-box{
+             padding: 20px 16px 15px;
+             &-info{
+                & h4{
+                    margin-bottom: 4px;
+                }
+                & p{
+                    font-size: 15px;
+                    margin: 0;
+                }
+             }
+        }
+        &-shape{
+            top: -5px;
+            left: -40px;
+            max-width: inherit;
+            mix-blend-mode: multiply;
+        }
+    }
+}

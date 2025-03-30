@@ -1,0 +1,107 @@
+@use '../../utils/' as *;
+
+.tpcauses{
+    box-shadow: 0px 36px 16px -24px rgba(18, 16, 24, 0.08);
+    padding: 15px;
+    &__content{
+
+    }   
+    &__img{
+
+    }
+    &__meta{
+        & span{
+            & svg{
+                margin-right: 5px;
+            }
+            color: #85838B;
+            font-size: 14px;
+        }
+    }
+    &__title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    &__amount{
+        & label{
+            font-size: 15px;
+            color: #56605D;
+            display: block;
+            line-height: 1;
+        }
+        & span{
+            color: #121018;
+            font-size: 18px;
+            font-weight: 600;
+            display: block;
+        }
+    }
+    &__downtext{
+        & p{
+            font-size: 24px;
+            font-family: var(--tp-font-heading);
+        }
+    }
+    
+}
+
+.swiper.tpcauses-slider-active{
+    margin-right: -512px;
+}
+
+.tp-arrow{
+    border-radius: 12px;
+    border: 1px solid rgba(18, 16, 24, 0.10);
+    width: 60px;
+    height: 60px;
+    &-prev{
+        margin-right: 6px;
+    }
+}
+
+
+
+.tp-author-shape{
+    & img{   
+        border: 2px solid #FFF;
+        box-shadow: 0px 10px 30px 0px rgba(18, 16, 24, 0.20);
+        border-radius: 50%;
+    }
+    &-1{
+        left: 16%;
+        top: 42%;
+    }
+    &-2{
+        left: 25%;
+        top: 12%;
+    }
+    &-3{
+        left: 47%;
+        top: 8%;
+    }
+    &-4{
+        left: 28%;
+        bottom: 22%;
+    }
+    &-5{
+        left: 50%;
+        bottom: 34%;
+    }
+    &-6{
+        right: 30%;
+        top: 30%;
+    }
+    &-7{
+        right: 24%;
+        top: 8%;
+    }
+    &-8{
+        right: 9%;
+        top: 24%;
+    }
+    &-9{
+        right: 8%;
+        bottom: 17%;
+    }
+}

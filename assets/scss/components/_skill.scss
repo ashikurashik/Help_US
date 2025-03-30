@@ -1,1 +1,38 @@
 @use '../utils/' as *;
+
+.tpprogress{
+    label{
+        background: var(--tp-theme-color);
+        margin-bottom: 6px;
+        padding: 7px 6px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #121018;
+        border-radius: 6px;
+        line-height: 1;
+        position: relative;
+        transform: translateX(-64%);
+        &::before{
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 5px;
+            border-style: solid;
+            border-width: 5px 5px 0 5px;
+            border-color: var(--tp-theme-color) transparent transparent transparent;
+            transform: rotate(0deg);
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        
+        }
+    }
+    & .progress, .progress-stacked {
+        --bs-progress-height: 8px;
+        --bs-progress-bg: rgba(18, 16, 24, 0.10);
+        --bs-progress-bar-color: #fff;
+        --bs-progress-bar-bg: var(--tp-theme-color);
+        border-radius: 6px;
+    }
+}

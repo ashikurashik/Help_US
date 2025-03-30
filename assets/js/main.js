@@ -33,4 +33,14 @@
         // other options
     });
 
+// swiper-slider
+    var swiper = new Swiper(".tpcauses-slider-active", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".tp-arrow-next",
+            prevEl: ".tp-arrow-prev",
+          },
+      });
+
 })(jQuery);

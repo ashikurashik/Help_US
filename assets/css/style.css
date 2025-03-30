@@ -36,6 +36,7 @@
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sue+Ellen+Francisco&display=swap");
 :root {
+  --tp-body-color: #5A5860;
   --tp-theme-color: #FFcF4E;
   --tp-primary-color: #073D30;
   --tp-primary-color-2: #055140;
@@ -67,6 +68,81 @@
 }
 .tp-btn-text {
   font-size: 15px;
+}
+.tp-btn-border {
+  border-radius: 12px;
+  border: 1px solid #073D30;
+  padding: 11px 27px;
+  text-align: center;
+  font-weight: 600;
+  color: #073D30;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+}
+.tp-btn-border-down {
+  font-size: 24px;
+  color: #121018;
+  font-weight: 600;
+  border-bottom: 1px solid #121018;
+  font-family: var(--tp-font-heading);
+  display: inline-block;
+}
+
+.tp-section-info-space {
+  margin-left: 78px;
+}
+.tp-section-sub-title {
+  font-size: 30px;
+  color: var(--tp-pink-color);
+}
+.tp-section-title {
+  font-size: 60px;
+}
+.tp-section-back-title {
+  font-size: 280px;
+  background: linear-gradient(179deg, #E0DEDA 39.13%, #F2F0EC 104.12%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  bottom: 50px;
+  z-index: 1;
+  left: -6px;
+}
+
+.tpprogress label {
+  background: var(--tp-theme-color);
+  margin-bottom: 6px;
+  padding: 7px 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #121018;
+  border-radius: 6px;
+  line-height: 1;
+  position: relative;
+  transform: translateX(-64%);
+}
+.tpprogress label::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 5px;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: var(--tp-theme-color) transparent transparent transparent;
+  transform: rotate(0deg);
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.tpprogress .progress, .tpprogress .progress-stacked {
+  --bs-progress-height: 8px;
+  --bs-progress-bg: rgba(18, 16, 24, 0.10);
+  --bs-progress-bar-color: #fff;
+  --bs-progress-bar-bg: var(--tp-theme-color);
+  border-radius: 6px;
 }
 
 * {
@@ -743,6 +819,126 @@ textarea {
   padding-bottom: 150px;
 }
 
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-35 {
+  padding-top: 35px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-45 {
+  padding-top: 45px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pt-55 {
+  padding-top: 55px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pt-65 {
+  padding-top: 65px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pt-75 {
+  padding-top: 75px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pt-85 {
+  padding-top: 85px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pt-95 {
+  padding-top: 95px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pt-105 {
+  padding-top: 105px;
+}
+
+.pt-110 {
+  padding-top: 110px;
+}
+
+.pt-115 {
+  padding-top: 115px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pt-125 {
+  padding-top: 125px;
+}
+
+.pt-130 {
+  padding-top: 130px;
+}
+
+.pt-135 {
+  padding-top: 135px;
+}
+
+.pt-140 {
+  padding-top: 140px;
+}
+
+.pt-145 {
+  padding-top: 145px;
+}
+
+.pt-150 {
+  padding-top: 150px;
+}
+
 .w-img img {
   width: 100%;
 }
@@ -765,18 +961,22 @@ img {
 
 .z-index-1 {
   z-index: 1;
+  position: relative;
 }
 
 .z-index-2 {
   z-index: 2;
+  position: relative;
 }
 
 .z-index-3 {
   z-index: 3;
+  position: relative;
 }
 
 .z-index-11 {
   z-index: 11;
+  position: relative;
 }
 
 .overflow-y-visible {
@@ -811,6 +1011,16 @@ img {
 
 .tp-sub-font {
   font-family: var(--tp-font-sub-heading);
+}
+
+.br-12 {
+  border-radius: 12px;
+}
+.br-16 {
+  border-radius: 16px;
+}
+.br-20 {
+  border-radius: 20px;
 }
 
 .tp-header-transparent {
@@ -960,6 +1170,155 @@ img {
 .tp-services:hover {
   transform: translateY(-10px);
   box-shadow: 0px 20px 60px 0px rgba(41, 28, 3, 0.1);
+}
+
+.tp-about-shape-1 {
+  left: 97px;
+  top: 23%;
+  mix-blend-mode: exclusion;
+}
+.tp-about-shape-2 {
+  right: -232px;
+  top: -5%;
+}
+.tp-about-vr-title {
+  font-size: 130px;
+  font-weight: 600;
+  color: #E0DEDA;
+  margin: 0;
+  line-height: 1;
+  right: -192px;
+  transform: rotate(90deg);
+  top: 120px;
+}
+.tp-about-number {
+  bottom: 80px;
+  right: -120px;
+}
+.tp-about-number-info {
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  left: 0;
+  right: 0;
+  padding-right: 62px;
+}
+.tp-about-number-info h2 {
+  color: #F8F3E7;
+  font-size: 90px;
+}
+.tp-about-number-info h6 {
+  font-size: 15px;
+  color: #F8F3E7;
+  letter-spacing: 0;
+  margin: 0;
+}
+.tp-about-fact-img {
+  margin-right: 12px;
+}
+.tp-about-fact-box {
+  padding: 20px 16px 15px;
+}
+.tp-about-fact-box-info h4 {
+  margin-bottom: 4px;
+}
+.tp-about-fact-box-info p {
+  font-size: 15px;
+  margin: 0;
+}
+.tp-about-fact-shape {
+  top: -5px;
+  left: -40px;
+  max-width: inherit;
+  mix-blend-mode: multiply;
+}
+
+.tpcauses {
+  box-shadow: 0px 36px 16px -24px rgba(18, 16, 24, 0.08);
+  padding: 15px;
+}
+.tpcauses__meta span {
+  color: #85838B;
+  font-size: 14px;
+}
+.tpcauses__meta span svg {
+  margin-right: 5px;
+}
+.tpcauses__title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.tpcauses__amount label {
+  font-size: 15px;
+  color: #56605D;
+  display: block;
+  line-height: 1;
+}
+.tpcauses__amount span {
+  color: #121018;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+}
+.tpcauses__downtext p {
+  font-size: 24px;
+  font-family: var(--tp-font-heading);
+}
+
+.swiper.tpcauses-slider-active {
+  margin-right: -512px;
+}
+
+.tp-arrow {
+  border-radius: 12px;
+  border: 1px solid rgba(18, 16, 24, 0.1);
+  width: 60px;
+  height: 60px;
+}
+.tp-arrow-prev {
+  margin-right: 6px;
+}
+
+.tp-author-shape img {
+  border: 2px solid #FFF;
+  box-shadow: 0px 10px 30px 0px rgba(18, 16, 24, 0.2);
+  border-radius: 50%;
+}
+.tp-author-shape-1 {
+  left: 16%;
+  top: 42%;
+}
+.tp-author-shape-2 {
+  left: 25%;
+  top: 12%;
+}
+.tp-author-shape-3 {
+  left: 47%;
+  top: 8%;
+}
+.tp-author-shape-4 {
+  left: 28%;
+  bottom: 22%;
+}
+.tp-author-shape-5 {
+  left: 50%;
+  bottom: 34%;
+}
+.tp-author-shape-6 {
+  right: 30%;
+  top: 30%;
+}
+.tp-author-shape-7 {
+  right: 24%;
+  top: 8%;
+}
+.tp-author-shape-8 {
+  right: 9%;
+  top: 24%;
+}
+.tp-author-shape-9 {
+  right: 8%;
+  bottom: 17%;
 }
 
 /*# sourceMappingURL=style.css.map */

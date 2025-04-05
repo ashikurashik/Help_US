@@ -36,3 +36,12 @@
         border-radius: 6px;
     }
 }
+
+
+
+
+
+.tp-help-progress .progress, .tp-help-progress .progress-stacked{
+    --bs-progress-height: 10px;
+    --bs-progress-bg: rgba(248, 243, 231, 0.10);
+}

@@ -1,0 +1,25 @@
+@use '../../utils/' as *;
+
+
+.tp-text-slider-rotate{
+    transform: rotate(1deg);
+}
+.tp-text-slide{
+    &-title{
+        margin-bottom: 0;
+        font-size: 80px;
+        font-weight: 300;
+        & img{
+            margin-right: 30px;
+        }
+    }
+}
+
+.tp-slide-transtion{
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+.tp-brand-slide-element{
+    width: auto;
+    display: inline-block;
+}

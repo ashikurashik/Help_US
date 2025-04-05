@@ -37,9 +37,24 @@
     var swiper = new Swiper(".tpcauses-slider-active", {
         slidesPerView: 3,
         spaceBetween: 30,
+        loop: true,
         navigation: {
             nextEl: ".tp-arrow-next",
             prevEl: ".tp-arrow-prev",
+          },
+      });
+
+      var swiper = new Swiper(".tpcauses-brand-active", {
+        slidesPerView: 'auto',
+        spaceBetween: 40,
+        freemode: true,
+        centerSlides: true,
+        loop: true,
+        speed: 4000,
+        allowTouchMove: false,
+        autoplay: {
+            delay: 1,
+            disableOnInteraction: true,
           },
       });
 
